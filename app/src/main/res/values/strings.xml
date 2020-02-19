@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationArchitectureComponent</string>
+
+    <string name="back">back</string>
+    <string name="next">next</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="fragment_3">Fragment 3</string>
+    <string name="fragment_4">Fragment 4</string>
+    <string name="fragment_5">Fragment 5</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
