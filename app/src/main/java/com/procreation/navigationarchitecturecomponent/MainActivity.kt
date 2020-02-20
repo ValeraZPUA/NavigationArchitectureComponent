@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     fun onFragment1NextClick() {
 
-        val action = Fragment1Directions.actionFragment1ToFragment2("some text")
+        val action = Fragment1Directions.actionFragment1ToFragment2("from fragment 1")
         navController.navigate(action)
     }
 
@@ -92,12 +92,5 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     fun onFragment3BackClick() {
         navController.popBackStack()
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        //if(item.itemId == R.id.id_logout)
-            Log.d("tag", item.itemId.toString())
-
-        return false
     }
 }
